@@ -43,6 +43,7 @@ import SettingsBackup from '../routes/settings/settings-backup';
 
 // Integrations
 import TelegramPage from '../routes/integration/all/telegram';
+import CaldavPage from '../routes/integration/all/caldav';
 import DarkSkyPage from '../routes/integration/all/darksky';
 import PhilipsHuePage from '../routes/integration/all/philips-hue';
 import ZwaveNodePage from '../routes/integration/all/zwave/node-page';
@@ -94,6 +95,7 @@ const AppRouter = connect(
         <IntegrationPage path="/dashboard/integration/navigation" />
 
         <TelegramPage path="/dashboard/integration/communication/telegram" />
+        <CaldavPage path="/dashboard/integration/calendar/caldav" />
         <DarkSkyPage path="/dashboard/integration/weather/darksky" />
         <PhilipsHuePage path="/dashboard/integration/device/philips-hue" />
         <Redirect path="/dashboard/integration/device/zwave" to="/dashboard/integration/device/zwave/node" />
